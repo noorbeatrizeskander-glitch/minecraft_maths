@@ -33,3 +33,19 @@ def calcular_material(item, numero_items=1):
         numero_barras = sum(receita[i] for i in receita) * numero_items
 
         return numero_barras
+
+lista_items = {"barreira": "barrier"}
+lista_efeitos = {"visão nocturna": "night_vision"}
+
+def comando_minecraft(item):
+    comando_items = "/give @s minecraft:"
+    comando_efeitos = "/effect @s minecraft:"
+
+    if item in lista_items:
+        commando = comando_items + lista_items[item]
+    elif item in lista_efeitos:
+        commando = comando_efeitos + lista_efeitos[item]
+    else:
+        return
+
+    return commando

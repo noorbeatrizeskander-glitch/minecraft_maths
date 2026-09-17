@@ -1,8 +1,6 @@
 import streamlit as st
 
-from functions import calculo_packs, calculo_barras, calcular_material, calculo_blocos_escadas
-
-
+from functions import calculo_packs, calculo_barras, calcular_material, calculo_blocos_escadas, comando_minecraft
 
 st.title("Cálculo de packs de blocos para o minecraft")
 
@@ -26,3 +24,6 @@ with col3:
     armaduras = st.slider("Quantas armaduras no total", min_value=0, max_value=64*10)
     st.write(f"Precisas de {calcular_material("armadura",armaduras)} blocos para fazer um total "
              f"de {armaduras} armaduras ")
+
+item = st.text_input("Item ou efeito")
+comando = comando_minecraft(item)

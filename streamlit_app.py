@@ -26,4 +26,4 @@ with col3:
              f"de {armaduras} armaduras ")
 
 item = st.text_input("Item ou efeito")
-comando = comando_minecraft(item)
+st.write(comando_minecraft(item))

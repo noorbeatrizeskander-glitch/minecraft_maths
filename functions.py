@@ -35,7 +35,10 @@ def calcular_material(item, numero_items=1):
         return numero_barras
 
 lista_items = {"barreira": "barrier"}
-lista_efeitos = {"visão nocturna": "night_vision"}
+lista_efeitos = {"visão nocturna": "night_vision",
+                 "invisibilidade": "invisibility",
+                 "velocidade": "speed",
+                 "super velocidade": "speed"}
 
 def comando_minecraft(item):
     comando_items = "/give @s minecraft:"
@@ -46,6 +49,6 @@ def comando_minecraft(item):
     elif item in lista_efeitos:
         commando = comando_efeitos + lista_efeitos[item]
     else:
-        return
+        return "Não conheeço esse comando"
 
     return commando

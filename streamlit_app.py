@@ -12,7 +12,9 @@ def calculo_packs(n_blocos):
 
     return f"Precisas de {n_packs_completos} packs e {int(n_blocos_extra)} blocos"
 
-blocos = st.slider("Quantos blocos", min_value=0, max_value=10000)
+st.title("Cálculo de packs de blocos para o minecraft")
+
+blocos = st.slider("Quantos blocos no total", min_value=0, max_value=10000)
 
 st.write(calculo_packs(blocos))
     

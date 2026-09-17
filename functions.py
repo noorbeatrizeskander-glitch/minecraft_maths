@@ -1,6 +1,4 @@
 # numero de blocos por pack
-from pandas.conftest import ea_scalar_and_dtype
-
 blocos_pack = 64
 barras_bloco = 9
 escada_bloco = 6

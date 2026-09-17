@@ -30,6 +30,6 @@ def calcular_material(item, numero_items=1):
     if item in livro_de_receitas:
         receita = livro_de_receitas[item]
 
-        numero_barras = sum(receita[i] for i in receita)
+        numero_barras = sum(receita[i] for i in receita) * numero_items
 
         return numero_barras

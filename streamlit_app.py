@@ -17,3 +17,7 @@ st.write(f"Precisas de {barras} barras para fazer um total de {blocos} blocos ")
 escadas = st.slider("Quantas escadas no total", min_value=0, max_value=64*10)
 st.write(f"Precisas de {calculo_blocos_escadas(escadas)} blocos para fazer um total "
          f"de {escadas} escadas ")
+
+armaduras = st.slider("Quantas armaduras no total", min_value=0, max_value=64*10)
+st.write(f"Precisas de {calcular_material("armadura",armaduras)} blocos para fazer um total "
+         f"de {armaduras} armaduras ")

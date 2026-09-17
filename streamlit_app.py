@@ -1,20 +1,15 @@
 import streamlit as st
 
-# numero de blocos por pack
-blocos_pack = 64
+from functions import calculo_packs, calculo_barras
 
-#funçao para calcular numero de packs + blocos extra
 
-def calculo_packs(n_blocos):
-    n_packs = n_blocos / blocos_pack
-    n_packs_completos = int(n_packs)
-    n_blocos_extra = (n_packs - n_packs_completos) * blocos_pack
-
-    return f"Precisas de {n_packs_completos} packs e {int(n_blocos_extra)} blocos"
 
 st.title("Cálculo de packs de blocos para o minecraft")
 
 blocos = st.slider("Quantos blocos no total", min_value=0, max_value=10000)
 
-st.write(calculo_packs(blocos))
-    
+packs = calculo_packs(blocos)
+barras = calculo_barras(blocos)
+
+st.write(f"Precisas de {packs[0]} packs e {packs[1]} blocos")
+st.write(f"Precisas de {barras} barras para fazer um total de {blocos} blocos")

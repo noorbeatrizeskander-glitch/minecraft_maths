@@ -6,8 +6,19 @@ barras_bloco = 9
 escada_bloco = 6
 
 def calculo_packs(n_blocos):
+    """
+    Esta função calcula o numero de packs completos mais blocos extra, dado um numero total de
+    blocos
+
+    :param n_blocos: numero inteiro,
+    :return: tuple em formato (numero de packs completos, numero de blocos extre)
+    """
+
+    # num pack é igual ao numero de blocos a dividir pelo numero de blocos por pack
     n_packs = n_blocos / blocos_pack
+    # queremos o numero de packs completos, ou seja, a parte inteira da divisao
     n_packs_completos = int(n_packs)
+
     n_blocos_extra = (n_packs - n_packs_completos) * blocos_pack
 
     return (n_packs_completos, int(n_blocos_extra))

@@ -31,8 +31,14 @@ item = st.text_input("Item ou efeito")
 st.write(comando_minecraft(item))
 
 st.subheader("Calculadora")
-num_1 = st.number_input("1º Numero")
-operation = st.radio("Operação", ["multiplicação", "divisão"])
-num_2 = st.number_input
-st.write("=")
-st.write(calculadora(num_1,num_2, operation))
+col4, col5, col6, col7, col8 = st.columns(5)
+with col4:
+    num_1 = st.number_input("1º Numero")
+with col5:
+    operation = st.radio("Operação", ["multiplicação", "divisão"])
+with col6:
+    num_2 = st.number_input("2º Numero")
+with col7:
+    st.write("=")
+with col8:
+    st.write(calculadora(num_1,num_2, operation))

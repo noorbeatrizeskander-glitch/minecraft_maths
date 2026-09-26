@@ -34,7 +34,9 @@ def calcular_material(item, numero_items=1):
 
         return numero_barras
 
-lista_items = {"barreira": "barrier"}
+lista_items = {"barreira": "barrier",
+               "machado de diamante": "diamond_axe"}
+
 lista_efeitos = {"visão nocturna": "night_vision",
                  "invisibilidade": "invisibility",
                  "velocidade": "speed",

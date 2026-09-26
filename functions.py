@@ -54,3 +54,6 @@ def comando_minecraft(item):
         return "Não conheeço esse comando"
 
     return commando
+
+def calculadora():
+    pass

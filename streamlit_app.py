@@ -1,6 +1,7 @@
 import streamlit as st
 
-from functions import calculo_packs, calculo_barras, calcular_material, calculo_blocos_escadas, comando_minecraft
+from functions import (calculo_packs, calculo_barras, calcular_material, calculo_blocos_escadas,
+                       comando_minecraft, calculadora)
 
 st.title("Cálculo de packs de blocos para o minecraft")
 
@@ -25,5 +26,13 @@ with col3:
     st.write(f"Precisas de {calcular_material("armadura",armaduras)} blocos para fazer um total "
              f"de {armaduras} armaduras ")
 
+st.subheader("Comandos")
 item = st.text_input("Item ou efeito")
 st.write(comando_minecraft(item))
+
+st.subheader("Calculadora")
+num_1 = st.number_input("1º Numero")
+operation = st.radio("Operação", ["multiplicação", "divisão"])
+num_2 = st.number_input
+st.write("=")
+st.write(calculadora(num_1,num_2, operation))

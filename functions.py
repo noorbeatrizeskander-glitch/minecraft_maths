@@ -59,8 +59,8 @@ def comando_minecraft(item):
 
 def calculadora(num1, num2, operacacao:str):
     if operacacao == "multiplicação":
-        return num1 * num2
+        return round(num1 * num2, 4)
     elif operacacao == "divisão":
-        return  num1 / num2
+        return  round(num1 / num2,4)
     else:
         return None

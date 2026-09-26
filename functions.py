@@ -1,4 +1,6 @@
 # numero de blocos por pack
+from numpy.ma.core import divide
+
 blocos_pack = 64
 barras_bloco = 9
 escada_bloco = 6
@@ -55,5 +57,10 @@ def comando_minecraft(item):
 
     return commando
 
-def calculadora():
-    pass
+def calculadora(num1, num2, operation):
+    if operation == "multiplicação":
+        return num1 * num2
+    elif operation == "divisão":
+        return  num1 / num2
+    else:
+        return None

@@ -41,4 +41,4 @@ with col6:
 with col7:
     st.write("=")
 with col8:
-    st.write(calculadora(num_1,num_2, operation))
+    st.write(calculadora(num_1, num_2, operation))

@@ -31,7 +31,7 @@ item = st.text_input("Item ou efeito")
 st.write(comando_minecraft(item))
 
 st.subheader("Calculadora")
-col4, col5, col6, col7, col8 = st.columns(5)
+col4, col5, col6, col7, col8 = st.columns(5, vertical_alignment="bottom")
 with col4:
     num_1 = st.number_input("1º Numero")
 with col5:
@@ -41,4 +41,4 @@ with col6:
 with col7:
     st.write("=")
 with col8:
-    st.write(calculadora(num_1, num_2, operation))
+    st.write(str(calculadora(num_1, num_2, operation)))

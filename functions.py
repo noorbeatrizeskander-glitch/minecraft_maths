@@ -57,10 +57,10 @@ def comando_minecraft(item):
 
     return commando
 
-def calculadora(num1, num2, operation):
-    if operation == "multiplicação":
+def calculadora(num1, num2, operacacao:str):
+    if operacacao == "multiplicação":
         return num1 * num2
-    elif operation == "divisão":
+    elif operacacao == "divisão":
         return  num1 / num2
     else:
         return None

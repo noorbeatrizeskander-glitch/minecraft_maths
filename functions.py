@@ -48,7 +48,23 @@ def calcular_material(item, numero_items=1):
         return numero_barras
 
 lista_items = {"barreira": "barrier",
-               "machado de diamante": "diamond_axe"}
+               "machado de diamante": "diamond_axe",
+               "fogueira": "campfire",
+               "fogueira das almas": "soul_campfire",
+               "moldura": "item_frame",
+               "moldura brilhante": "glow_item_frame",
+               "prateleira": "shelf",
+               "cascalho suspeito": "suspicious_gravel",
+               "areia suspeita": "suspicious_sand",
+               "cofre": "vault",
+               "barco de acácia": "acacia_boat",
+               "barco  de acácia com baú": "acacia_chest_boat",
+               "jangada": "bamboo raft",
+               "jangada com baú": "bamboo_chest_raft",
+               "suporte de armaduras": "armor_stand",
+               "barco de bétula": "birch:boat",
+               "barco de bétula com báu": "birch_chest_boat",
+               "almofada preta": "black_cushion"}
 
 lista_efeitos = {"visão nocturna": "night_vision",
                  "invisibilidade": "invisibility",

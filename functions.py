@@ -66,7 +66,7 @@ lista_items = {"barreira": "barrier",
                "barco de bétula com báu": "birch_chest_boat",
                "almofada preta": "black_cushion"}
 
-lista_efeitos = {"visão nocturna": "night_vision_infinite",
+lista_efeitos = {"visão nocturna": "night_vision infinite",
                  "invisibilidade": "invisibility",
                  "velocidade": "speed",
                  "super velocidade": "speed"}

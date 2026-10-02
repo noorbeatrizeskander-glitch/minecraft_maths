@@ -73,7 +73,7 @@ lista_efeitos = {"visão nocturna": "night_vision",
 
 def comando_minecraft(item):
     comando_items = "/give @s minecraft:"
-    comando_efeitos = "/effect @s minecraft:"
+    comando_efeitos = "/effect give @s minecraft:"
 
     if item in lista_items:
         commando = comando_items + lista_items[item]

@@ -68,7 +68,7 @@ lista_items = {"barreira": "barrier",
 
 lista_efeitos = {"visão nocturna": "night_vision infinite",
                  "invisibilidade": "invisibility",
-                 "velocidade": "speed",
+                 "velocidade": "speed infinite",
                  "super velocidade": "speed"}
 
 def comando_minecraft(item):
